@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/ece7959ef3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="hamburger">
+    <div class="hamburger" onclick="turn()">
         <span class="line-1"></span>
         <span class="line-2"></span>
         <span class="line-3"></span>
@@ -18,10 +18,16 @@
         <div class="items"><span><i class="fa-solid fa-user"></i></span>Profile</div>
         <div class="items"><span><i class="fa-solid fa-fire"></i></span>Trending</div>
         <div class="items"><span><i class="fa-solid fa-comments"></i></span>Messages</div>
-        <div class="items"><span><i class="fa-solid fa-file-lines"></i></span>File Manager</div>
         <div class="items"><span><i class="fa-solid fa-briefcase"></i></span>Portfolio</div>
+        <div class="items"><span><i class="fa-solid fa-file-lines"></i></span>File Manager</div>
         <div class="items"><span><i class="fa-solid fa-heart"></i></span>Saved</div>
         <div class="items"><span><i class="fa-solid fa-gears"></i></span>Settings</div>
     </div>
+    <script>
+        function turn(){
+            let anime_cont = document.querySelector(".container");
+            anime_cont.classList.add("anime");
+        }
+    </script>
 </body>
 </html>

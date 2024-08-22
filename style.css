@@ -20,48 +20,54 @@ body {
   height: 100%;
   background-color: white;
   box-shadow: 10px 0px 8px -8px grey;
-  position: absolute;
-  left: 0;
+  position: relative;
+  left: -300;
   top: 0;
   z-index: -1;
 }
 
-.items{
-    height: 45px;
-    font-size: 1.3rem;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+.items {
+  height: 45px;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
 }
 
-.items:hover{
-  background-color: purple;
-  color: white;
+
+p {
+  height: 65px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-p{
-    height: 65px;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: purple;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+i {
+  margin: 10px;
 }
 
-i{
-    margin: 10px;
+span {
+  margin-right: 8px;
 }
 
-span{
-    margin-right: 8px;
+.line-1, .line-2, .line-3{
+  display: block;
+  background-color: black;
+  height: 5px;
+  width: 35px;
+  margin: 6px;
+  border-radius: 20px;
 }
 
 .hamburger{
-  height: 30px;
-  width: 40px;
-  margin-left: 10px;
   position: absolute;
-  top: 22px;
+  top: 14px;
+  left: 12px;
   cursor: pointer;
+}
+
+.anime{
+  transition: all ;
 }
