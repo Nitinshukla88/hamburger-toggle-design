@@ -20,6 +20,10 @@ body {
   height: 100%;
   background-color: white;
   box-shadow: 10px 0px 8px -8px grey;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .items{
@@ -27,6 +31,12 @@ body {
     font-size: 1.3rem;
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+.items:hover{
+  background-color: purple;
+  color: white;
 }
 
 p{
@@ -45,4 +55,13 @@ i{
 
 span{
     margin-right: 8px;
+}
+
+.hamburger{
+  height: 30px;
+  width: 40px;
+  margin-left: 10px;
+  position: absolute;
+  top: 22px;
+  cursor: pointer;
 }
