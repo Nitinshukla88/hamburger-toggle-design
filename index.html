@@ -43,10 +43,10 @@
       </div>
     </div>
     <div class="toggle">
-        <label for="toggle">Buttton:</label>
-        <div class="btn-box">
-            <div class="btn" onclick="swipe()"></div>
-        </div>
+      <label for="toggle">Buttton:</label>
+      <div class="btn-box">
+        <div class="btn" onclick="swipe()"></div>
+      </div>
     </div>
     <script>
       let turned = "NO";
@@ -61,7 +61,7 @@
           first_line.classList.add("rotate-right");
           first_line.classList.add("transit");
           first_line.style.width = "43px";
-          sec_line.style.width = "0px"
+          sec_line.style.width = "0px";
           sec_line.classList.add("decrease-middle-line");
           third_line.classList.add("rotate-left");
           third_line.classList.add("transit");
@@ -81,9 +81,22 @@
 
       let btn_turned = "NO";
       let swiper = document.querySelector(".btn");
-      function swipe(){
-        swiper.style.left = "31px";
-        swiper.classList.add("swiper-move");
+      let swiper_parent = document.querySelector(".btn-box");
+      function swipe() {
+        if (btn_turned == "NO") {
+          swiper.style.left = "31";
+          swiper.classList.add("swiper-move");
+          swiper.style.backgroundColor = "rgb(114, 137, 158)";
+          swiper_parent.style.backgroundColor = "white";
+          swiper_parent.style.border = "1px solid rgb(114, 137, 158)";
+          btn_turned = "YES";
+        } else {
+          swiper.style.left = "0";
+          swiper.style.backgroundColor = "white";
+          swiper_parent.style.backgroundColor = "rgb(114, 137, 158)";
+          swiper_parent.style.border = "none";
+          btn_turned = "NO";
+        }
       }
     </script>
   </body>
