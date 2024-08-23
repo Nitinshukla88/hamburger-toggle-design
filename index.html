@@ -45,7 +45,7 @@
     <div class="toggle">
         <label for="toggle">Buttton:</label>
         <div class="btn-box">
-            <div class="btn"></div>
+            <div class="btn" onclick="swipe()"></div>
         </div>
     </div>
     <script>
@@ -77,6 +77,13 @@
           third_line.style.width = "35px";
           turned = "NO";
         }
+      }
+
+      let btn_turned = "NO";
+      let swiper = document.querySelector(".btn");
+      function swipe(){
+        swiper.style.left = "31px";
+        swiper.classList.add("swiper-move");
       }
     </script>
   </body>
