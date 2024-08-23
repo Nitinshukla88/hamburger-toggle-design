@@ -1,33 +1,67 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hamburger-toggle button design</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/ece7959ef3.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ece7959ef3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="hamburger" onclick="turn()">
-        <span class="line-1"></span>
-        <span class="line-2"></span>
-        <span class="line-3"></span>
+      <span class="line-1"></span>
+      <span class="line-2"></span>
+      <span class="line-3"></span>
     </div>
     <div class="container">
-        <p class = "menu">MENU</p>
-        <div class="items"><span><i class="fa-solid fa-tv"></i></span>Dashboard</div>
-        <div class="items"><span><i class="fa-solid fa-user"></i></span>Profile</div>
-        <div class="items"><span><i class="fa-solid fa-fire"></i></span>Trending</div>
-        <div class="items"><span><i class="fa-solid fa-comments"></i></span>Messages</div>
-        <div class="items"><span><i class="fa-solid fa-briefcase"></i></span>Portfolio</div>
-        <div class="items"><span><i class="fa-solid fa-file-lines"></i></span>File Manager</div>
-        <div class="items"><span><i class="fa-solid fa-heart"></i></span>Saved</div>
-        <div class="items"><span><i class="fa-solid fa-gears"></i></span>Settings</div>
+      <p class="menu">MENU</p>
+      <div class="items">
+        <span><i class="fa-solid fa-tv"></i></span>Dashboard
+      </div>
+      <div class="items">
+        <span><i class="fa-solid fa-user"></i></span>Profile
+      </div>
+      <div class="items">
+        <span><i class="fa-solid fa-fire"></i></span>Trending
+      </div>
+      <div class="items">
+        <span><i class="fa-solid fa-comments"></i></span>Messages
+      </div>
+      <div class="items">
+        <span><i class="fa-solid fa-briefcase"></i></span>Portfolio
+      </div>
+      <div class="items">
+        <span><i class="fa-solid fa-file-lines"></i></span>File Manager
+      </div>
+      <div class="items">
+        <span><i class="fa-solid fa-heart"></i></span>Saved
+      </div>
+      <div class="items">
+        <span><i class="fa-solid fa-gears"></i></span>Settings
+      </div>
+    </div>
+    <div class="toggle">
+        <label for="toggle">Buttton:</label>
+        <div class="btn-box">
+            <div class="btn"></div>
+        </div>
     </div>
     <script>
-        function turn(){
-            let anime_cont = document.querySelector(".container");
-            anime_cont.classList.add("anime");
+      let turned = "NO";
+      let anime_cont = document.querySelector(".container");
+      function turn() {
+        if (turned == "NO") {
+          anime_cont.style.left = "0";
+          anime_cont.classList.add("anime");
+          turned = "YES";
+        } else {
+          anime_cont.style.left = "-300px";
+          anime_cont.classList.add("anime");
+          turned = "NO";
         }
+      }
     </script>
-</body>
+  </body>
 </html>

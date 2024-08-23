@@ -69,5 +69,28 @@ span {
 }
 
 .anime{
-  transition: all ;
+  transition: left 500ms ease-out;
+}
+
+.toggle{
+  border: 1px solid black;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-box{
+  height: 50px;
+  width: 60px;
+  border: 1px solid red;
+}
+
+.btn{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 1px solid green;
+  margin: 5px;
 }
