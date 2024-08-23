@@ -61,6 +61,24 @@ span {
   border-radius: 20px;
 }
 
+.rotate-right{
+  position: relative;
+  transform: translateY(8px) rotate(45deg);
+}
+
+.decrease-middle-line{
+  transition: width 500ms;
+}
+
+.rotate-left{
+  position: relative;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+.transit{
+  transition: transform 500ms;
+}
+
 .hamburger{
   position: absolute;
   top: 14px;
@@ -73,7 +91,6 @@ span {
 }
 
 .toggle{
-  border: 1px solid black;
   width: 100px;
   position: absolute;
   left: 50%;
@@ -82,15 +99,19 @@ span {
 }
 
 .btn-box{
-  height: 50px;
-  width: 60px;
-  border: 1px solid red;
+  height: 36px;
+  width: 66px;
+  background-color: rgb(114, 137, 158);
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
 }
 
 .btn{
-  height: 35px;
-  width: 35px;
+  height: 27px;
+  width: 27px;
   border-radius: 50%;
-  border: 1px solid green;
-  margin: 5px;
+  margin-left: 4px;
+  background-color: white;
+  cursor: pointer;
 }

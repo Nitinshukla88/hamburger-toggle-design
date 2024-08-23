@@ -51,14 +51,30 @@
     <script>
       let turned = "NO";
       let anime_cont = document.querySelector(".container");
+      let first_line = document.querySelector(".line-1");
+      let sec_line = document.querySelector(".line-2");
+      let third_line = document.querySelector(".line-3");
       function turn() {
         if (turned == "NO") {
           anime_cont.style.left = "0";
           anime_cont.classList.add("anime");
+          first_line.classList.add("rotate-right");
+          first_line.classList.add("transit");
+          first_line.style.width = "43px";
+          sec_line.style.width = "0px"
+          sec_line.classList.add("decrease-middle-line");
+          third_line.classList.add("rotate-left");
+          third_line.classList.add("transit");
+          third_line.style.width = "43px";
           turned = "YES";
         } else {
           anime_cont.style.left = "-300px";
           anime_cont.classList.add("anime");
+          first_line.classList.remove("rotate-right");
+          first_line.style.width = "35px";
+          sec_line.style.width = "35px";
+          third_line.classList.remove("rotate-left");
+          third_line.style.width = "35px";
           turned = "NO";
         }
       }
